@@ -37,7 +37,7 @@ func main() {
 
 	switch *outputMode {
 	case "debug":
-		fmt.Printf("header: %v\ndescriptors: %v\nrecords: %v\n", data.Header, data.ArrayDescriptors, data.Records)
+		fmt.Printf("header: %+v\n\ndescriptors: %+v\n\nrecords: %+v\n", data.Header, data.ArrayDescriptors, data.Records)
 	case "csv":
 		if *oName == "" {
 			fmt.Print("Please enter output file name\n\n")
